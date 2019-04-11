@@ -8,7 +8,7 @@ twitter_username: namnguyenDev
 github_username: nam-viet-nguyen
 
 # Site Settings 
-baseurl: ""
+baseurl: "https://nnfunny.github.io/"
 timzone: Australia/Melbourne #https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 permalink: ""
 
