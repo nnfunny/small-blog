@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Mukta', sans-serif;
+}
+
+.back {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.story {
+    font-size: 25px;
+}
+
+.PostList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.postSingle {
+    margin-top: 50px;
+}
+
+.date {
+    margin-top: -10px;
+    margin-left: 50px;
+}

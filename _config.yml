@@ -1,0 +1,39 @@
+# Site Info
+title: "Silly Funny Stories"
+description: "Imaginary English Stories."
+
+# Author Info
+author_name: Nam Nguyen
+twitter_username: namnguyenDev
+github_username: nam-viet-nguyen
+
+# Site Settings 
+baseurl: ""
+timzone: Australia/Melbourne #https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink: ""
+
+# Build settings
+markdown: kramdown
+
+# Others
+include: ["pages"]
+exclude: ["LICENSE","README.md","vendor","Gemfile","Gemfile.lock"]
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "null"
+
+  -
+    scope: 
+      type: "pages"
+    values:
+      layout: "page"
+    
+  - 
+    scope: 
+      type: "posts"
+    values:
+      layout: "post"
