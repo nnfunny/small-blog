@@ -14,12 +14,6 @@ html {
     html {
         font-size: 1rem;
     }
-
-    .ava {
-        position: none;
-        top: -22px;
-        left: 300px;
-    }
 }
 
 /* Home Button */
@@ -45,12 +39,3 @@ html {
     margin-left: 50px;
 }
 
-
-/* avatar */
-.ava {
-    position: absolute; 
-    width: 100px; border-radius: 50%; 
-    height: 100px; 
-    left: 45%; 
-    top: -15px;
-}
