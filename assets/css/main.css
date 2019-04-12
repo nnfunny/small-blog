@@ -1,8 +1,10 @@
+/* Reset all element */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* The whole page  */
 html {
     font-family: 'Mukta', sans-serif;
     font-size: 1.4rem;
@@ -14,11 +16,14 @@ html {
     }
 }
 
+/* Home Button */
 .back {
     text-align: center;
     margin-top: 25px;
 }
 
+
+/* Post List */
 .PostList {
     position: relative;
     display: flex;
