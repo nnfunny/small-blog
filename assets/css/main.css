@@ -58,7 +58,6 @@ a {
     height: 175px;
     border: solid red;
     flex-direction: row;
-    margin: -2.5em 0 0 -2.5em;
     margin-top: 50px;
 }
 
