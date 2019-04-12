@@ -2,9 +2,16 @@
 layout: default
 ---
 
-{% for post in site.posts%}
-    <div class="PostList">
-        <h1 class="postSingle"><a href="{{ site.baseurl }}/1">{{post.title}}</a></h1>
-        <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
-    </div>
-{% endfor %}
+
+<section>
+    <ul>
+        {% for post in site.posts %}
+            <li>
+                <div class="PostList">
+                    <h3 class="postSingle"><a href="{{post.url| prepend: site.baseurl}}">{{post.title}}</a></h3>
+                    <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
+                </div>  
+            </li>
+        {% endfor %}
+    </ul>
+</section>
