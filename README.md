@@ -1,4 +1,4 @@
-# **Silly Funny Stories**
+# **Silly Funny Stories** :blush:
 
 ### The *Silly Funny Story* site brings my imaginary funny stories. I choose randomly 5 English vocabularies to write a funny story every 2 days.
 
