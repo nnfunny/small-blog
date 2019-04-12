@@ -3,10 +3,24 @@ layout: page
 title: About Me
 permalink: /aboutme/
 ---
-
-<div style="margin-top: 30px; padding: 10px 75px 10px 75px; position: relative;">
+<style>
+    .ava {
+        position: absolute; 
+        width: 100px; border-radius: 50%; 
+        height: auto; 
+        left: 45%; 
+        top: -15px;
+        }
+    @media screen and (max-width: 600px) {
+        .ava {
+            position: absolute;
+            top: -22px;
+        }
+    }
+</style>
+<div class="aboutme"style="margin-top: 30px; position: relative;">
     <p>Hello everyone 😋,</p>
-    <img src="../assets/img/ava.png" alt="Image Broken" style="position: absolute; height: 100px; width: 100px; border-radius: 50%; box-shadow: 10px; left: 500px; top: -20px;">
+    <img class="ava" src="../assets/img/ava.png" alt="Image Broken">
     <p>How are you going today?</p>    
     <p>I am Nam Nguyen. I come from Vietnam. I am currently an international student in Deakin University in Melbourne, Australia.</p>   
     <p>I am an avid beginner in web developement, and I am interested in reading books.</p>  
