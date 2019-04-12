@@ -23,7 +23,11 @@ html {
         font-size: 1.2rem;
     }
 
-
+    .post {
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+    }
     
 }
 
@@ -41,7 +45,7 @@ a {
 }
 
 .PostList {
-    /* margin: auto 0; */
+    margin: auto 0;
     padding: 20px;
     position: relative;
     display: -moz-flex;
@@ -68,5 +72,7 @@ a {
 .postSingle {
     position: absolute;
 }
+
+
 
 
