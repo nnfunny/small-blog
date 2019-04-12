@@ -37,16 +37,16 @@ a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     border: solid red;
+    flex-direction: row;
 }
 
 .PostList .date {
     position: absolute;
     bottom: -20px;
 }
-
 .postSingle {
     position: absolute;
 }
