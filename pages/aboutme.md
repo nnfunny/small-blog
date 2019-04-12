@@ -4,7 +4,7 @@ title: About Me
 permalink: /aboutme/
 ---
 
-Hello everyone :blush:,
+Hello everyone 😋,
 
 How are you going today? 
 
