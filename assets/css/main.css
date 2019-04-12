@@ -33,15 +33,22 @@ a {
     margin-top: 50px;
     padding: 20px;
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 200px;
+    height: 200px;
     border: solid red;
+    flex-direction: column
 }
 
 .PostList .date {
     position: absolute;
     bottom: -20px;
+}
+
+.postSingle {
+    position: absolute;
 }
 
 
