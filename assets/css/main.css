@@ -25,26 +25,23 @@ html {
 
 /* Post List */
 
-li {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none !important;
 }
 
 .PostList {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.postSingle {
     margin-top: 50px;
+    padding: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: solid red;
 }
 
-.date {
-    margin-top: -10px;
-    margin-left: 50px;
+.PostList .date {
+    position: absolute;
+    bottom: -20px;
 }
+
 
