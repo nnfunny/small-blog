@@ -161,12 +161,7 @@ a {
     border: solid rgba(223, 225, 226, 0.4)  
 }
 
-@media screen and (max-width: 600px) {
-    .menu-wrap .hamburger {
-        height: 60px;
-        width: 60px;
-    }
-}
+
 
 .menu-wrap .hamburger > div {
     position: relative;
