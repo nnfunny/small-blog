@@ -122,7 +122,7 @@ a {
 /* Navba - Menu */
 
 .menu-wrap {
-    position: fixed;
+    position: absolute;
     top: 0.6%;
     right: 15%;
     z-index: 1;
