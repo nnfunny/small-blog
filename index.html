@@ -4,10 +4,14 @@ layout: default
 
 
 <section class="post">
-        {% for post in site.posts %}
-                <div class="PostList">
-                    <h3 class="postSingle"><a href="{{post.url| prepend: site.baseurl}}">{{post.title}}</a></h3>
-                    <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
-                </div>  
-        {% endfor %}
+        <div class="flex-container">
+                {% for post in site.posts %}
+                        <div class="PostList">
+                                <div class="text">
+                                        <h3 class="postSingle"><a href="{{post.url| prepend: site.baseurl}}">{{post.title}}</a></h3>
+                                        <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
+                                </div>      
+                        </div>  
+                {% endfor %}
+        </div>
 </section>
