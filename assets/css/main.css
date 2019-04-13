@@ -150,8 +150,8 @@ a {
     top: 0;
     left: 0;
     z-index: 1;
-    height: 70px;
-    width: 70px;
+    height: 65px;
+    width: 65px;
     padding: 1rem;
     /* background-color: var(--primary-color); */
     display: flex;
