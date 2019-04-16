@@ -52,7 +52,6 @@ a {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -moz-box;
     display: -webkit-flex;
     display: flex;
     height: 100%;
@@ -93,6 +92,19 @@ a {
 }
 
 @media screen and (max-width: 600px){
+    .flex-container {
+        display: -webkit-grid;
+        display: -moz-grid;
+        display: -ms-grid;
+        display: grid;
+        grid-row-gap: 0px;
+        /* grid-column-gap: 0; */
+        /* -moz-flex-wrap: none;
+        -webkit-flex-wrap: none;
+        -ms-flex-wrap: none;
+        flex-wrap: none; */
+
+    }
     .PostList {
         width: 120px;
         height: 120px;
