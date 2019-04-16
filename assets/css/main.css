@@ -98,12 +98,6 @@ a {
         display: -ms-grid;
         display: grid;
         grid-row-gap: 0px;
-        /* grid-column-gap: 0; */
-        /* -moz-flex-wrap: none;
-        -webkit-flex-wrap: none;
-        -ms-flex-wrap: none;
-        flex-wrap: none; */
-
     }
     .PostList {
         width: 120px;
