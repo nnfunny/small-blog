@@ -10,3 +10,5 @@
 * [Bootstrap 4](https://getbootstrap.com/)
 * [cmry.github.io](https://github.com/cmry/cmry.github.io)
 * [Stack Overflow](https://stackoverflow.com/)
+* [Font Awesome](https://fontawesome.com/)
+

@@ -1,5 +1,6 @@
 ---
 title: "Jack n Simon"
+author: Nam Nguyen
 read: 1.5
 permalink: "2"
 ---

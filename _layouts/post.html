@@ -6,7 +6,7 @@ layout: "default"
     <h1>{{ page.title }}</h1>
     <p>{{ page.date | date: '%B %-d, %Y' }}&nbsp;|&nbsp;
         {% if page.path contains '_posts' %}
-        {{page.read}} minute read&nbsp;|&nbsp;Nam Nguyen
+        {{page.read}} minute read&nbsp;|&nbsp;{{page.author}}
         {% endif %}
     </p>
     <hr>
@@ -14,7 +14,7 @@ layout: "default"
 </article>
 
 <div class="back">
-        <a class="home" href="{{site.baseurl}}/"><b> &#8656 </b></a>
+        <a class="home" href="{{site.baseurl}}/"><i class="fas fa-arrow-circle-left"></i></a>
 
         <style>
             .home {
