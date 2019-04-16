@@ -43,6 +43,8 @@ a {
 }
 
 .flex-container {
+    padding: 0;
+    margin: 0;
     border: 1px solid silver;
     border-radius: 10px;
     box-shadow: 0 0 10px silver;
@@ -59,13 +61,13 @@ a {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
 }
 
 .PostList {
-    width: 175px;
-    height: 175px;
-    padding: 5px;
+    width: 200px;
+    height: 200px;
     margin: 30px;
 
     border: solid rgba(180, 219, 231, 0.815);
@@ -76,10 +78,13 @@ a {
 
     text-align: center;
     position: relative;
+    line-height: 50px;
+    padding-top: 30px;
 }
 
 .PostList:hover {
     box-shadow: 0px 0px 10px 10px rgba(75, 226, 231, 0.815);
+    z-index: 10;
 }
 
 .flex-container .PostList .text {
@@ -91,7 +96,8 @@ a {
     .PostList {
         width: 120px;
         height: 120px;
-        margin: 20px;
+        margin: 0;
+        line-height: 10px;
     }
 
     .PostList .text .date{
