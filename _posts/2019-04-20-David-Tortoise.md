@@ -5,15 +5,15 @@ read: 1.5
 permalink: "5"
 ---
 
-*Befit (verb) 
+*Befit (verb):  to be suitable and good enough for somebody/something* 
 
-Wallow 
+*Wallow (verb): enjoy something that causes you pleasure*
 
-Fickle 
+*Fickle (adjective): often changing their mind in an unreasonable way so that you cannot rely on them*
 
-Perceptive 
+*Perceptive (adjective): having or showing the ability to see or understand things quickly, especially things that are not obvious*
 
-All-expenses-paid
+*All-expenses-paid (adjective): free*
 
 _Source:_ [**Oxford Dictionary**](https://www.oxfordlearnersdictionaries.com/)
 
