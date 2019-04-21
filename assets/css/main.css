@@ -54,7 +54,7 @@ a {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    height: 100%;
+    height: auto;
     width: 100%;
     -moz-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
