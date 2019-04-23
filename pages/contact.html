@@ -38,18 +38,21 @@ permalink: /contact/
         .item {
             height: 150px;
             width: 150px;
-            margin: 10px;
             text-align: center;
-            padding: 5px;
             font-weight: bold;
-            line-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
         }
 
         @media screen and (max-width: 600px) {
             .item {
-                height: 100px;
-                width: 100px;
-                line-height: 90px;
+                height: 130px;
+                width: 130px;
+            }
+
+            .item a {
+                font-size: 10px;
             }
         }
 
