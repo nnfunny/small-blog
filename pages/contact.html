@@ -36,13 +36,20 @@ permalink: /contact/
         }
 
         .item {
-            height: 100px;
-            width: 100px;
+            height: 150px;
+            width: 150px;
             margin: 10px;
             text-align: center;
             padding: 5px;
             font-weight: bold;
             line-height: 90px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .item {
+                height: 100px;
+                width: 100px;
+            }
         }
 
         .contact-flex-container .item1 {
