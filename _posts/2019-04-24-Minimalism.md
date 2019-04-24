@@ -1,5 +1,5 @@
 ---
-title: Minimalism vs. "Maximalism"
+title: Minimalism
 author: Nam Nguyen
 read: 2
 permalink: "7"
