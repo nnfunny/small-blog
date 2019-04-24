@@ -1,5 +1,5 @@
 ---
-title: Minimalism
+title: Minimalist vs. ...
 author: Nam Nguyen
 read: 2
 permalink: "7"
