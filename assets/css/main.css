@@ -144,8 +144,16 @@ a {
 
 .nav-title{
     font-size: 1.5rem;
-    padding-left: 10%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgba(223, 24, 24, 0.7);
+    border: solid red;
+    width: 400px;
 }
 
 .nav-title:hover {
