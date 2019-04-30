@@ -1,9 +1,27 @@
 ---
 layout: default
 ---
-<article>
-    <h3 style="padding-top: 1em; text-align: center"><b>{{ page.title }}</b></h3>
+<article class='article-story'>
+    <h3 style="text-align: center"><b>{{ page.title }}</b></h3>
     <div>{{ content }}</div>
+
+    <style>
+        .article-story {
+            padding-top: 20vh;
+        }
+
+        @media screen and (max-width: 600px){
+            .article-story {
+                padding-top: 15vh;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 850px){
+            .article-story {
+                padding-top: 30vh;
+            }
+        }
+    </style>
 </article>
 
 <div class="back">
