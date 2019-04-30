@@ -4,7 +4,6 @@ layout: default
 
 
 <section class="post">
-        <canvas id="canvas"></canvas>
         <div class="flex-container">
                 {% for post in site.posts %}
                         <div class="PostList">
@@ -17,14 +16,3 @@ layout: default
         </div>
         <script src="/assets/js/main.js"></script>
 </section>
-<style>
-        .flex-container {
-                margin-top: -63%;
-        }
-
-        @media screen and (max-width: 600px) {
-                .flex-container {
-                        margin-top: -188%;
-                }
-        }
-</style>

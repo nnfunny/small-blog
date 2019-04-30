@@ -3,16 +3,6 @@
     --overlay-color: rgba(24,39,51,0.85);
 }
 
-#canvas {
-    margin-top: 15%;
-    width: 100%;
-}
-@media screen and (max-width: 600px) {
-    #canvas {
-        margin-top: 30%;
-    }
-}
-
 /* Reset all element */
 * {
     margin: 0;
@@ -54,7 +44,7 @@ a {
 }
 
 .flex-container {
-    padding: 0;
+    padding-top: 20vh;
     margin: 0;
     /* border: 1px solid silver;
     border-radius: 10px;
@@ -113,6 +103,7 @@ a {
         display: -ms-grid;
         display: grid;
         grid-row-gap: 0px;
+        padding-top: 15vh;
     }
     .PostList {
         width: 120px;
@@ -126,6 +117,12 @@ a {
     }
 }
 
+@media (min-width: 600px) and (max-width: 850px){
+    .flex-container {
+        padding-top: 30vh;
+    }
+}
+
 
 /* navbar */
 
@@ -136,7 +133,7 @@ a {
     width: 100%;
     z-index: 1;
     margin-bottom: 10px;
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
