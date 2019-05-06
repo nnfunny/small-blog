@@ -46,9 +46,6 @@ a {
 .flex-container {
     padding-top: 20vh;
     margin: 0;
-    /* border: 1px solid silver;
-    border-radius: 10px;
-    box-shadow: 0 0 10px silver; */
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -77,19 +74,18 @@ a {
     transition: box-shadow 0.5s ease;
 
     text-align: center;
-    position: relative;
-    line-height: 50px;
-    padding-top: 30px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .PostList:hover {
     box-shadow: 0px 0px 10px 10px rgba(75, 226, 231, 0.5);
     z-index: 10;
-}
-
-.flex-container .PostList .text {
-    position: absolute;
-    top: 20px;
 }
 
 .flex-container .PostList .text a {
@@ -109,7 +105,7 @@ a {
         width: 120px;
         height: 120px;
         margin: 20px;
-        line-height: 10px;
+        padding-top: 12px;
     }
 
     .PostList .text .date{
@@ -120,7 +116,7 @@ a {
 /* Add mare pages and fix max-width as well */
 @media (min-width: 600px) and (max-width: 850px){
     .flex-container {
-        padding-top: 30vh;
+        padding-top: 40vh;
     }
 }
 
@@ -165,10 +161,7 @@ a {
 }
 
 /* fix max-width if add more pages */
-@media screen and (max-width: 850px) { 
-    .nav-title{
-        padding-left: 0;
-    }
+@media screen and (max-width: 850px) {
     .nav-flex-container {
         flex-direction: column;
         justify-content: center;
@@ -181,7 +174,7 @@ a {
 
 li {
     list-style: none;
-    margin: 0 30px;
+    margin: 0 25px;
 }
 
 li a {
@@ -233,7 +226,6 @@ li a:hover {
         height: 65px;
         width: 65px;
         padding: 1rem;
-        /* background-color: var(--primary-color); */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -318,8 +310,8 @@ li a:hover {
     .menu-wrap .menu > div {
         background: var(--overlay-color);
         border-radius: 50%;
-        width: 200vw;
-        height: 200vw;
+        width: 300vw;
+        height: 300vh;
         display: flex;
         flex: none;
         align-items: center;
