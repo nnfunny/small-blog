@@ -310,7 +310,7 @@ li a:hover {
     .menu-wrap .menu > div {
         background: var(--overlay-color);
         border-radius: 50%;
-        width: 300vw;
+        width: 300vh;
         height: 300vh;
         display: flex;
         flex: none;
