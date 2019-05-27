@@ -113,10 +113,10 @@ a {
     }
 }
 
-/* Add mare pages and fix max-width as well */
-@media (min-width: 600px) and (max-width: 850px){
+/* Fix max-width if add more pages  */
+@media (min-width: 600px) and (max-width: 900px){
     .flex-container {
-        padding-top: 40vh;
+        padding-top: 50vh;
     }
 }
 
@@ -161,7 +161,7 @@ a {
 }
 
 /* fix max-width if add more pages */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .nav-flex-container {
         flex-direction: column;
         justify-content: center;
@@ -172,9 +172,10 @@ a {
     }
 }
 
+/* fix margin when adding more pages */
 li {
     list-style: none;
-    margin: 0 25px;
+    margin: 0 20px;
 }
 
 li a {
