@@ -1,18 +1,40 @@
 ---
 layout: default
 ---
+<div class="home-page">
+    <div class="animated jackInTheBox">
+        Namie House
+    </div>
+    <button class="get-started">Get started</button>
+</div>
 
+<style>
+    .home-page {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: -100;
+    }
 
-<section class="post">
-        <div class="flex-container">
-                {% for post in site.posts %}
-                        <div class="PostList">
-                                <div class="text">
-                                        <h3 class="postSingle"><a href="{{post.url| prepend: site.baseurl}}">{{post.title}}</a></h3>
-                                        <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
-                                </div>      
-                        </div>  
-                {% endfor %}
-        </div>
-        <script src="/assets/js/main.js"></script>
-</section>
+    .home-page div {
+        font-size: 5rem;
+        text-align: center;
+        font-weight: bold;
+        color:rgb(18, 139, 83);
+    }
+
+    .get-started {
+        text-decoration: none;
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+        background: rgb(135, 209, 135);
+        color: white;
+        box-shadow: 1px 0px 3px 0px rgb(62, 172, 120);
+        font-size: 16px;
+        font-weight: bold;
+    }
+</style>
