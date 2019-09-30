@@ -30,19 +30,19 @@
 
 
 <script>
-    let widthMedia = window.matchMedia("(max-width: 600px)")
+    let widthMedia = window.matchMedia("(max-width: 800px)")
     let nav = document.getElementById("navigation-bar")
     let sideBar = document.getElementById("side-bar")
 
-    widthMedia.addListener(() => {
-        if (widthMedia.matches) {
+    function queryMedia(x) {
+        if (x.matches) {
             nav.style.visibility = "hidden"
             sideBar.style.visibility = "visible"
         } else {
             nav.style.visibility = "visible"
             sideBar.style.visibility = "hidden"
         }
-    })
+    }
 
     function openSideBar() {
         document.getElementById("side-nav").style.width = "250px";
@@ -56,4 +56,7 @@
         document.getElementById("page-content").style.opacity = "1"
         document.getElementById("basic-bar").style.visibility = "visible"
     }
+
+    queryMedia(widthMedia)
+    widthMedia.addListener(queryMedia)
 </script>
