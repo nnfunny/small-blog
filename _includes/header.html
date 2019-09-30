@@ -1,4 +1,4 @@
-<div class="navigation-bar">
+<div class="navigation-bar" id="navigation-bar">
     <h3 class="brand-name">Namie House</h3>
     <nav>
         <ul class="nav-links">
@@ -7,5 +7,53 @@
             <li><a href="">Stories</a></li>
         </ul>
     </nav>
-    <a href="" class="about-me"><button>About Me</button></a>
+    <a href="" class="about-me" id="button-me"><button>About Me</button></a>
 </div>
+
+<div class="side-bar" id="side-bar">
+    <div id="side-nav" class="side-nav">
+        <button onclick="closeSideBar()" class="closebtn"><span>&#9746;</span></button>
+        <ul class="nav-links side-nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a href="">Stories</a></li>
+        </ul>
+        <div class="social-media-links">
+            <a href="" class="about-me-sidebar" id="button-me"><button>About Me</button></a>
+        </div>
+    </div>
+    <div class="basic-bar" id="basic-bar">
+        <button onclick="openSideBar()" class="openbtn"><span>&#9776;</span></button>
+        <h3>Namie Talkie</h3>
+    </div>
+</div>
+
+
+<script>
+    let widthMedia = window.matchMedia("(max-width: 600px)")
+    let nav = document.getElementById("navigation-bar")
+    let sideBar = document.getElementById("side-bar")
+
+    widthMedia.addListener(() => {
+        if (widthMedia.matches) {
+            nav.style.visibility = "hidden"
+            sideBar.style.visibility = "visible"
+        } else {
+            nav.style.visibility = "visible"
+            sideBar.style.visibility = "hidden"
+        }
+    })
+
+    function openSideBar() {
+        document.getElementById("side-nav").style.width = "250px";
+        document.getElementById("page-content").style.opacity = "0.2"
+        document.getElementById("basic-bar").style.visibility = "hidden"
+    }
+
+    /* Set the width of the side navigation to 0 */
+    function closeSideBar() {
+        document.getElementById("side-nav").style.width = "0";
+        document.getElementById("page-content").style.opacity = "1"
+        document.getElementById("basic-bar").style.visibility = "visible"
+    }
+</script>
