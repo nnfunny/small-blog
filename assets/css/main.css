@@ -84,7 +84,9 @@ nav {
 }
 
 .about-me {
-    width: 252.2px
+    width: 252.2px;
+    display: flex;
+    justify-content: flex-end
 }
 
 .about-me button {
