@@ -1,0 +1,64 @@
+---
+layout: default
+permalink: /about-me/
+---
+<div style="width: 100vw"></div>
+<div class="read-me container" id="read-me">
+    <h1 class="read-me-title">About Me 👨‍💻</h1>
+    <p>Hello everyone 😋,</p>
+    <p>How are you going today?</p>    
+    <p>I am Nam Nguyen who thinks that he is funny 🙄. I come from Vietnam. I am currently an international student in Deakin University in Melbourne, Australia.</p>   
+    <p>I am a big fan of web developement. I'm also interested in reading books 📚 and making videos 🎬(Adobe Premiere Pro CC)</p>  
+    <p>To pursue my passion of becoming a software engineer, I never stop putting all my effort to every personal project. This blog is one of my practical projects.</p>  
+    <p>Anyway, thanks for visting my page.</p>
+    <p>Any feedback about content as well as design, please feel free to contact me via:</p>
+    <ul class="contact-list">
+        <li><a href="https://www.linkedin.com/in/nam-nguyen-cs/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://github.com/nnfunny" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://www.instagram.com/nam.viet.nguyen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/vietnam.nguyen.186" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/namnguyenDev" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    </ul>
+</div>
+
+<style>
+    .read-me {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    .read-me-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    .contact-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-list li {
+        margin: 10px;
+    }
+
+    .contact-list a {
+        color: black;
+        font-size: 30px;
+    }
+    
+</style>
+
+<script>
+    // let widthreadMeMedia = window.matchMedia("(min-width: 1500px)")
+    let readMe = document.getElementById("read-me");
+    let heightreadMe = readMe.offsetHeight;
+    console.log(heightreadMe)
+
+    if (heightreadMe < 930) {
+        readMe.style.height = "100vh"
+    }
+</script>
