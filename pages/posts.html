@@ -1,0 +1,78 @@
+---
+layout: default
+permalink: /posts/
+---
+<div style="width: 100vw"></div>
+<div class="post-list container" id="post-list">
+    <h1 class="post-list-title">Nam's Posts ✨(●'◡'●)</h1>
+    {% for post in site.posts %}
+        <div class="list-post">
+            <p class="list-post-title"><a href="{{post.url| prepend: site.baseurl}}">{{post.title}}</a></p>
+            <p class="date"><i>{{ post.date | date: '%B %-d, %Y' }}</i></p>
+            <p class="short-desc">{{ post.shortdesc }}</p>
+            <p class="post-read"><a href="{{post.url| prepend: site.baseurl}}">Read >></a></p>
+        </div>
+    {% endfor %}
+</div>
+
+<style>
+    .post-list {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    .post-list-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    .list-post {
+        margin-bottom: 50px;
+    }
+
+    .list-post p {
+        margin: 5px;
+    }
+
+    .list-post-title a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color:rgb(65, 148, 148)
+    }
+
+    .list-post-title a:hover {
+        color:rgb(5, 39, 39)
+    }
+
+    .date {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .short-desc {
+        font-size: 1rem;
+    }
+
+    .post-read a {
+        text-decoration: none;
+        color:rgb(78, 78, 218)
+    }
+
+    .post-read a:hover {
+        color:blue;
+    }
+</style>
+
+<script>
+    // let widthPostListMedia = window.matchMedia("(min-width: 1500px)")
+    let postList = document.getElementById("post-list");
+    let heightPostList = postList.offsetHeight;
+    console.log(heightPostList)
+
+    if (heightPostList < 930) {
+        postList.style.height = "100vh"
+    }
+</script>

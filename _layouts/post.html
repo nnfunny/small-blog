@@ -1,0 +1,38 @@
+---
+layout: "default"
+---
+
+<div style="width: 100vw"></div>
+<div class="post-content container" id="post-content">
+    <div class="post-title">
+        <h1 style="font-weight: bold">{{ page.title }}</h1>
+        <p>{{ page.date | date: '%B %-d, %Y' }}&nbsp;|&nbsp;
+            {% if page.path contains '_posts' %}
+            {{page.read}} minute read&nbsp;|&nbsp;{{page.author}}
+            {% endif %}
+        </p>
+    </div>
+    {{ content }}
+</div>
+
+<style>
+    .post-content {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        height: auto;
+    }
+
+    .post-title {
+        padding-bottom: 50px;
+    }
+</style>
+
+<script>
+    // let widthPostContentMedia = window.matchMedia("(min-width: 1500px)")
+    let postContent = document.getElementById("post-content");
+    let heightPostContent = postContent.offsetHeight;
+
+    if(heightPostContent < 930){
+        postContent.style.height = "100vh"
+    }
+</script>

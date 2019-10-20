@@ -25,13 +25,6 @@ defaults:
       path: ""
     values:
       layout: "null"
-
-  -
-    scope: 
-      type: "pages"
-    values:
-      layout: "page"
-    
   - 
     scope: 
       type: "posts"

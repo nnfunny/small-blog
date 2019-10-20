@@ -7,7 +7,7 @@ layout: default
     <div class="animated jackInTheBox">
         Namie Talkie
     </div>
-    <button class="get-started">Get started</button>
+    <button class="get-started"><a href="/posts/">Get started</a></button>
 </div>
 
 <style>
@@ -50,8 +50,16 @@ layout: default
         font-weight: bold;
     }
 
+    .get-started a {
+        text-decoration: none;
+        color: black
+    }
+
     .get-started:hover {
         background:  black;
+    }
+
+    .get-started a:hover{
         color: white;
     }
 </style>
