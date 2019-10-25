@@ -20,12 +20,13 @@ permalink: /about-me/
         <li><a href="https://twitter.com/namnguyenDev" target="_blank"><i class="fab fa-twitter"></i></a></li>
     </ul>
 </div>
+{% include footer.html %}
 
 <style>
     .read-me {
         padding-top: 100px;
         padding-bottom: 50px;
-        height: auto;
+        height: 100%;
     }
 
     .read-me-title {
@@ -53,22 +54,10 @@ permalink: /about-me/
     .contact-list ul {
         padding-bottom: 100px
     }
-
-    @media (min-width: 400px) {
+    
+    @media (min-width: 1200px) {
         .read-me {
             height: 100vh;
         }
-    }    
-    
+    } 
 </style>
-
-<script>
-    // let widthreadMeMedia = window.matchMedia("(min-width: 1500px)")
-    let readMe = document.getElementById("read-me");
-    let heightreadMe = readMe.offsetHeight;
-    console.log(heightreadMe)
-
-    if (heightreadMe < 930) {
-        readMe.style.height = "100%"
-    }
-</script>

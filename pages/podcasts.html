@@ -45,11 +45,13 @@ permalink: /podcasts/
     </div>
 </div>
 
+{% include footer.html %}
+
 <style>
     .podcast-list {
         padding-top: 150px;
         padding-bottom: 50px;
-        height: auto;
+        height: 100%;
     }
 
     .podcast-title {
@@ -68,14 +70,3 @@ permalink: /podcasts/
     }
 
 </style>
-
-<script>
-    // let widthPodcastMedia = window.matchMedia("(min-width: 1500px)")
-    let podcast = document.getElementById("podcast-list");
-    let heightPodcast = podcast.offsetHeight;
-    console.log(heightPodcast)
-
-    if (heightPodcast < 930) {
-        podcast.style.height = "100vh"
-    }
-</script>
